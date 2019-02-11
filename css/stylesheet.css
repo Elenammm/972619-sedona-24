@@ -4,28 +4,19 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
-    font-weight: ;
     color: #333333;
     text-transform: uppercase;
-    background-image: url("img/background-photo.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
-  a {
+}
+a {
     text-decoration: none;
-  }
-  .inner-page {
-    color:;
-    background-image: url("img/filter-background.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
-  .main-header-logo {
+    color: #000000;
+}
+.main-header: {
+  position: relative;
+}
+.main-header-logo {
     position: absolute;
-
-  }
-
-.main-navigation,
+}
 .site-navigation {
     font-weight: bold;
     list-style: none;
@@ -36,159 +27,130 @@ body {
 .main-navigation a:hover,
 .main-navigation a:focus { 
 }
-  .welcome {
-    background-image: url("img/background-photo.jpg");
+.container {
+  width: 1200px;
+  text-align: center;
+}  
+.welcome {
+    background-image: url("../img/background-photo.jpg");
     background-position: 40px 0;
     background-repeat: no-repeat;
-    width: 1200 px;
     height: 773px;
-
-  }
-
-
-  .intro {
-    text-align: center;
-  }
-  
-  .page-title h1 {
-    font-size: 21px;
-    line-height: 26px;
-    color: black;
-    text-align: center;
-    width: 440px;
-    height: 48px;
-    word-wrap: normal;
-  }
-  .features-list {
-    background-color: #81b3d2; 
-    color: white;
-    
-    text-align: center;
-    line-height: 21px;
-    list-style: none;
+    background-size: cover;
+    background-position: top center;
+    background-color: #f2f2f2;
 }
-
+.page-title {
+    font-size: 21px;
+    color: #000000;
+    width: 440px;
+    word-wrap: break-word;
+}
+.features-list {
+  color: white;
+  line-height: 21px;
+  list-style: none;
+  background-color: #81b3d2;
+}
 .features-item {
-  width: 1280px;
-  height: 2762px;
+  width: 400px;
   background-color: #eeeeee;
 }
-.features-title h2{
+.features-title {
   font-size: 21px;
   font-weight: bold;
- }
- .features-title-food h2{
+  line-height: 21px;
   color: #000000;
-  
- }
- .features-title-hotels {
-  
- }
-
- .features-title-food {
-  width: 1200px;
-  height: 2762px;
-background-image: url("img/icon-3.svg")
- }
- .features-title-souvenires {
-  background-image: url("img/icon-2.svg")
-  background-position: center top;
- }
-
- .features-title-food {
-  width: 1200px;
-  height: 2762px;
-background-image: url("img/icon-3.svg")
- }
-
 }
- .interested-button button {
+p {
+  line-height: 21px;
+}
+.features-item-text {
+  color: #cccccc;
+}
+.features-title-food {
+  background-image: url("../img/icon-3.svg");
+  background-position: center top;
+  background-size: 74px 70px;
+}
+.features-title-souvenires {
+  background-image: url("../img/icon-2.svg");
+  background-position: center top;
+  background-size: 64px 76px;
+}
+.features-title-hotels {
+  background-image: url("../img/icon-1.svg");
+  background-position: center top;
+  background-size: 75px 72px;
+}
+.interested-button {
   font: inherit;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-  text-transform: uppercase;
+  color: #cccccc;
   font-size: 21px;
   line-height: 26px;
   background-color: #766357;
   border: none;
 }
-.booking-button button {
+.booking-button {
   font: inherit;
-  text-align: center;
   color: white;
-  vertical-align: middle;
-  text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
-  background-color: #81b3d2;
+  background-color: #5e9ec5;
   border: none;
 }
-.button:hover,
-.button:focus,
-.button:active {
+.interested-button:hover,
+.interested-button:focus,
+.interested-button:active {
   background-color: #663d15;
 }
-input {
+.booking input {
   font: inherit;
-  background-color: transparent;
   text-align: left;
-  }
- input:focus {
+}
+input:focus {
     border-color: #663d15;
-  }
-.booking form {
-  background-image: url("img/map.jpg")
-  background-size: 1200px 593px;
-  background-position: center bottom;
+}
+.booking-button:hover,
+.booking-button:focus,
+.booking-button:active {
+  background-color: #5e9ec5;
 }
 .hashtag {
   font-size: 21px;
   line-height: 26px;
 }
 .footer-social {
-  text-align: center;
 }
-
-.social-list ul {
+.social-list {
   list-style: none;
 }
-
 .social-button {
   background-color: #81b3d2;
   background-size: 46px 48px;
+  list-style: none;
 }
 .social-button-twitter {
-  background-image: url("img/twitter.svg")
-  background-position: absolute;
-
+  background-image: url("../img/twitter.svg");
+  background-position: center center;
 }
 .social-button-facebook {
-  background-image: url("img/fb-icon.svg")
-  background-position: absolute;
-
+  background-image: url("../img/fb-icon.svg");
+  background-position: center center;
 }
 
-.social-button-youtube{
-  background-image: url("img/youtube.svg")
-  background-position: absolute;
-
+.social-button-youtube {
+  background-image: url("../img/youtube.svg");
+  background-position: center center;
 }
-.footer-copyright {
-  text-align: center;
-}
-
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
-  color: #000000;
-}
-.inner-page {
-  background-image: url("img/filter-background.jpg")
-  background-position: center top;
-  background-size: 1200px 562px;
+.footer-copyright a {
 }
 .booking-form {
   color: #ffffff;
+  background-image: url("../img/filter-background.jpg");
+  background-position: center top;
+  background-size: 1200px 562px;
+  background-color: #f2f2f2;
 }
 .booking-form-title {
   font-size: 16px;
@@ -196,18 +158,16 @@ input {
   line-height: 21px;
   text-align: left;
 }
-.button.button-dark {
-  background-color: #766357;
-}
 .button {
   background-color: #81b3d2;
-  text-align: center;
+}
+.button-dark {
+  background-color: #766357;
 }
 .hotels-image {
   width: 135px;
-  height: 90px;
-}
-.hotels-item-info h3{
+  }
+.hotels-item-info {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
