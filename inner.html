@@ -19,7 +19,7 @@
 										<a href="info.html">Информация</a>
 									</li>
 									<li>
-										<a href="pictures.html">Фото</a>
+										<a href="pictures.html">Фото и видео</a>
 									</li>
 									<li>
 										<a href="map.html">Карта штата</a>
@@ -36,7 +36,7 @@
 								<legend class="booking-form-title">Инфраструктура:</legend>
 								<ul class="booking-form-list">
 									<li>
-										<input type="checkbox" name="pool" id="pool">
+										<input type="checkbox" checked name="pool" id="pool">
 											<label for="pool">Бассейн</label>
 										</li>
 										<li>
@@ -53,34 +53,44 @@
 											<legend class="booking-form-title">Тип жилья:</legend>
 											<ul class="booking-form-list">
 												<li>
-													<input type="checkbox" name="hotel" id="hotel">
+													<input type="checkbox" checked name="hotel" id="hotel">
 														<label for="hotel">Гостиница</label>
 													</li>
 													<li>
-														<input type="checkbox" name="motel" id="motel">
+														<input type="checkbox" checked name="motel" id="motel">
 															<label for="motel">Мотель</label>
 														</li>
 														<li>
-															<input type="checkbox" name="apartments" id="apartments">
+															<input type="checkbox" checked name="apartments" id="apartments">
 																<label for="apartments">Апартаменты</label>
 															</li>
 														</ul>
 													</fieldset>
 													<fieldset class="booking-form-cost">
 														<legend class="booking-form-title">Стоимость в сутки (р):</legend>
-														<label for="cost">
-															<ul class="booking-form-list">
-																<li>От 0</li>
-																<li>До 3000</li>
-															</label>
-															<input id="cost" type="range" max="3000" step="100">
-																<button class="button" type="submit" id="booking-form">Показать</button>
-															</ul>
+														<div class="price-controls">
+															<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+															<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+														  </div>
+														  <div class="range-controls">
+															<div class="scale">
+															  <div class="bar"></div>
+															</div>
+															<div class="range-toggle range-toggle-min"></div>
+															<div class="range-toggle range-toggle-max"></div>
+														  </div>
+														  <button class="button-transparent" type="submit">Показать</button>
 														</fieldset>
 													</form>
 													<div class=found>
 														<h2 class="found-title">найдено:3</h2>
-													</div>
+															<ul class="breadcrumbs">
+																<li class="sorting">Сортировка</li>
+																<li class="breadcrumbs-current">По цене</li>
+																<li>По типу</li>
+																<li>По рейтингу</li>
+															</ul>
+														</div>
 													<section class="hotels">
 														<ul class="hotels-list">
 															<li class="hotels-item">
@@ -93,12 +103,12 @@
 																		</h3>
 																		<p>Гостиница</p>
 																		<p>от 4000 р.</p>
-																		<a class="button" href="amara.html">Подробнее</a>
-																		<a class="button button-dark" class="booking" href="amara.html">Забронировать</a>
+																		<a class="button button-inner" href="amara.html">Подробнее</a>
+																		<a class="button button-dark" href="amara.html">Забронировать</a>
 																	</div>
 																	<div class="hotels-item-rating">
 																		<div class="hotels-item-stars"></div>
-																		<p>Рейтинг:8,5</p>
+																		<p>Рейтинг: 8,5</p>
 																	</div>
 																</li>
 																<li class="hotels-item">
@@ -116,7 +126,7 @@
 																		</div>
 																		<div class="hotels-item-rating">
 																			<div class="hotels-item-stars"></div>
-																			<p>Рейтинг:8,9</p>
+																			<p>Рейтинг: 8,9</p>
 																		</div>
 																	</li>
 																	<li class="hotels-item">
@@ -134,7 +144,7 @@
 																			</div>
 																			<div class="hotels-item-rating">
 																				<div class="hotels-item-stars"></div>
-																				<p>Рейтинг:9,2</p>
+																				<p>Рейтинг: 9,2</p>
 																			</div>
 																		</li>
 																	</ul>
