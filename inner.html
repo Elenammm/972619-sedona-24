@@ -25,26 +25,26 @@
 										<a href="map.html">Карта штата</a>
 									</li>
 									<li>
-										<a>Гостиницы</a>
+										<a class="active">Гостиницы</a>
 									</li>
 								</ul>
 							</nav>
 						</header>
-					<main class="container">
+					<main>
 						<form class="booking-form" metgod="get" action="https://echo.htmlacademy.ru">
 							<fieldset class="booking-form-group">
 								<legend class="booking-form-title">Инфраструктура:</legend>
 								<ul class="booking-form-list">
 									<li>
-										<input type="checkbox" checked name="pool" id="pool">
+										<input type="checkbox" class="visually-hidden" checked name="pool" id="pool">
 											<label for="pool">Бассейн</label>
 										</li>
 										<li>
-											<input type="checkbox" name="parking" id="parking">
+											<input type="checkbox" class="visually-hidden" name="parking" id="parking">
 												<label for="parking"> Парковка</label>
 											</li>
 											<li>
-												<input type="checkbox" name="wifi" id="wifi">
+												<input type="checkbox" class="visually-hidden" name="wifi" id="wifi">
 													<label for="wifi">Wi-fi</label>
 												</li>
 											</ul>
@@ -53,15 +53,15 @@
 											<legend class="booking-form-title">Тип жилья:</legend>
 											<ul class="booking-form-list">
 												<li>
-													<input type="checkbox" checked name="hotel" id="hotel">
+													<input type="checkbox" class="visually-hidden" checked name="hotel" id="hotel">
 														<label for="hotel">Гостиница</label>
 													</li>
 													<li>
-														<input type="checkbox" checked name="motel" id="motel">
+														<input type="checkbox" class="visually-hidden" checked name="motel" id="motel">
 															<label for="motel">Мотель</label>
 														</li>
 														<li>
-															<input type="checkbox" checked name="apartments" id="apartments">
+															<input type="checkbox" class="visually-hidden" checked name="apartments" id="apartments">
 																<label for="apartments">Апартаменты</label>
 															</li>
 														</ul>
@@ -83,13 +83,17 @@
 														</fieldset>
 													</form>
 													<div class=found>
-														<h2 class="found-title">найдено:3</h2>
-															<ul class="breadcrumbs">
-																<li class="sorting">Сортировка</li>
-																<li class="breadcrumbs-current">По цене</li>
-																<li>По типу</li>
-																<li>По рейтингу</li>
+														<h2 class="found-title">найдено: 3</h2>
+														<span class="sort-caption">Сортировка</span>
+															<ul class="sort-list">
+																<li><a href="#" active>По цене</a></li>
+																<li><a href="#">По типу</a></li>
+																<li><a href="#">По рейтингу</a></li>
 															</ul>
+															<div class="sort-arrow">
+																<a class="arrow arrow-up active"></a>
+																<a class="arrow arrow-down" href="#"></a>
+															</div>														
 														</div>
 													<section class="hotels">
 														<ul class="hotels-list">
@@ -107,7 +111,7 @@
 																		<a class="button button-dark" href="amara.html">Забронировать</a>
 																	</div>
 																	<div class="hotels-item-rating">
-																		<div class="hotels-item-stars"></div>
+																		<div class="hotels-item-stars star-4"></div>
 																		<p>Рейтинг: 8,5</p>
 																	</div>
 																</li>
@@ -125,7 +129,7 @@
 																			<a class="button button-dark" class="booking" href="desert.html">Забронировать</a>
 																		</div>
 																		<div class="hotels-item-rating">
-																			<div class="hotels-item-stars"></div>
+																			<div class="hotels-item-stars star-3"></div>
 																			<p>Рейтинг: 8,9</p>
 																		</div>
 																	</li>
@@ -143,14 +147,14 @@
 																				<a class="button button-dark" class="booking" href="villas.html">Забронировать</a>
 																			</div>
 																			<div class="hotels-item-rating">
-																				<div class="hotels-item-stars"></div>
+																				<div class="hotels-item-stars star-2"></div>
 																				<p>Рейтинг: 9,2</p>
 																			</div>
 																		</li>
 																	</ul>
 																</section>
 															</main>
-															<footer class="main-footer">
+															<footer class="inner-footer">
 																<p class="hashtag">#visitsedona</p>
 																<div class="footer-social">
 																	<ul class="social-list">
@@ -165,7 +169,7 @@
 																			</a>
 																		</li>
 																		<li>
-																			<a class="social-button social-button=youtube" href="img/youtube.svg" width="20" height="16">
+																			<a class="social-button social-button-youtube" href="img/youtube.svg" width="20" height="16">
 																				<span class="visually-hidden">Ютьюб</span>
 																			</a>
 																		</li>
