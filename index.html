@@ -107,32 +107,27 @@
 										<p class="field-wrap">
 											<label for="date-in">Дата заезда:</label>
 											<input type="text" name="date-in" id="date-in" value="24 апреля 2017">
-											<button class="calendar" aria-label="Выбрать дату"></button>
+											<button class="calendar" type="button" aria-label="Выбрать дату"></button>
 											</p>
 											<p class="field-wrap">
 												<label for="date-out">Дата выезда:</label>
 												<input type="text" name="date-out" id="date-out" value="04 июля 2017">
-												<button class="calendar" aria-label="Выбрать дату"></button>
+												<button class="calendar" type="button" aria-label="Выбрать дату"></button>
 												</p>
 												<p class="field-half-wrap">
 													<label for="adult-field">Взрослые:</label>
-													<button class="minus" aria-label="Уменьшить">-
-    </button>
+													<button class="minus" type="button" aria-label="Уменьшить">-</button>
 													<input type="number" name="adultamount" id="adult-field" min="1" value="2">
-													<button class="plus" aria-label="Увеличить">+
-  </button>
+													<button class="plus" type="button" aria-label="Увеличить">+</button>
 													</p>
 													<p class="field-half-wrap">
 														<label for="child-field">Дети:</label>
-														<button class="minus" aria-label="Уменьшить">-
-  </button>
+														<button class="minus" type="button" aria-label="Уменьшить">-</button>
 														<input type="number" name="childamount" id="child-field" min="0" value="0">
-														<button class="plus" aria-label="Увеличить">+
-    </button>
+														<button class="plus" type="button" aria-label="Увеличить">+</button>
 														</p>
 														<button class="button booking-button" type="submit">Найти</button>
 													</form>
-												
 												<div class="footer-wrapper">	
 												<p class="hashtag">#visitsedona</p>
 													<div class="footer-social">
@@ -162,25 +157,7 @@
 													    </div>
 													</footer>
 												  </div>
-												<script>
-													var link = document.querySelector(".interested-button");
-													var popup = document.querySelector(".booking");
-													  popup.classList.remove("booking-show");
-													  link.addEventListener("click", function (evt) {
-														  evt.preventDefault();
-														});
-													  popup.classList.toggle("booking-show");
-													  close.addEventListener("click", function (evt) {
-    													evt.preventDefault();
-    													popup.classList.remove("booking-show");
- 													  });
-													var mapPopup = document.querySelector(".map");
-													var mapLink = document.querySelector(".map");
-														mapPopup.classList.remove("booking-show");
-														mapLink.addEventListener("click", function (evt) {
-   														evt.preventDefault();
-    												mapPopup.classList.toggle("booking-show");
-  													});
-												</script>
+												<script src="js/script.min.js">
+													</script>
 											</body>
 										</html>

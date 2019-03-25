@@ -73,7 +73,7 @@ img {
 .site-navigation a:focus {
     color: #437797;
 }
-.site-navigation a:active {
+.site-navigation .active {
   color: #55595c;
 }
 .welcome {
@@ -85,12 +85,13 @@ img {
   position: relative;
 }
 .welcome::after {
+  content: "";
   position: absolute;
   background-image: url("../img/polygon.svg");
-  margin-left: 0;
-  margin-bottom: 0;
+  left: 0px;
   width: 100%;
-  height: 58px;
+  height: 56px;
+  bottom: 0;
   z-index: 2;
 }
 .intro {
@@ -317,7 +318,13 @@ img {
 }
 .field-wrap button::after {
   content: "";
-  background: url("../img/calendar.svg") no-repeat 100% 50%;
+  background: url("../img/calendar.svg") no-repeat;
+  width: 21px;
+  height: 22px;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  opacity: 0.3;
 }
 .field-half-wrap {
   display: flex;
@@ -439,16 +446,32 @@ input[type=number]::-webkit-outer-spin-button {
 .social-button-twitter::before {
   content: "";
   background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 15px;
   position: absolute;
-  z-index: 2;
+  left: 16px;
+  top: 16px;
 }
 .social-button-facebook::before {
   content: "";
   background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 22px;
+  position: absolute;
+  left: 17px;
+  top: 13px;
 }
 .social-button-youtube::before {
   content: "";
   background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  left: 13px;
+  top: 16px;
 }
 .footer-copyright {
   display: flex;
@@ -475,12 +498,12 @@ input[type=number]::-webkit-outer-spin-button {
 .booking-form-title {
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 34px;
   left: 0;
 }
 .booking-form-list {
   margin: 0;
   padding: 0;
+  margin-top: 34px;
   list-style: none;
 }
 .booking-form-group {
@@ -504,6 +527,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
   z-index: 2;
 }
 .booking-form-list input:checked + label::before {
@@ -512,12 +536,18 @@ input[type=number]::-webkit-outer-spin-button {
 .booking-form-list input:focus + label::before { 
   outline: auto;
 }
+.booking-form-list input:disabled + label::before {
+  background-color: #6a6a6a;
+  opacity: 0.5;
+}
 .booking-form-cost {
+  text-align: left;
   margin-left: auto;
   border: none;
 }
 .price-controls {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   width: 314px;
   height: 32px;
@@ -538,7 +568,7 @@ input[type=number]::-webkit-outer-spin-button {
   transform: translate(-50%, -50%);
 }
 .price-controls label {
-  margin-left: 20px;
+  margin-left: 45px;
   line-height: 31px;
   vertical-align: top;
   cursor: pointer;
@@ -632,8 +662,10 @@ input[type=number]::-webkit-outer-spin-button {
   width: 370px;
 }
 .sort-list li {
-  color:rgba(0, 0, 0, 0.3);
   margin-left: 33px;
+}
+.sort-list a {
+  color:rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
 .sort-list .active {
@@ -644,18 +676,25 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
   font-size: 12px;
 }
+.sort-arrow {
+  display: flex;
+  margin-left: auto;
+}
 .arrow {
+  display: block;
   margin-right: 73px;
   height: 10px;
   width: 11px;
-  background-color: #81b3d2;
 }
 .arrow-up {
-  background: url("../img/icon-up-dir.svg") no-repeat 1093px 50%;
+  background: url("../img/icon-up-dir.svg") no-repeat;
+  opacity: 0.3;
+  width: 11px;
+  height: 10px;
   margin-right: 12px;
 }
 .arrow-down {
-  background: url("../img/icon-down-dir.svg") no-repeat 1116px 50%;
+  background: url("../img/icon-down-dir.png") no-repeat;
 }
 .arrow .active {
   list-style: none;
@@ -712,12 +751,13 @@ input[type=number]::-webkit-outer-spin-button {
 .hotels-item-stars {
   width: 90px;
   height: 17px;
-  background-image: url("../ïmg/star.svg");
+  background-image: url("../img/star.svg");
   background-repeat: space;
-  margin-bottom: 47px;
   margin-left: auto;
+  margin-bottom: 47px;
 }
 .star-4 {
+  font-size: 0;
   width: 89px;
 }
 .star-3 {
